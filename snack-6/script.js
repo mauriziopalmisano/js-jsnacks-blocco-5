@@ -10,5 +10,13 @@ const zucchine = [
   { type: 'Calabrese', weight: 6, length: 27 },
   { type: 'Calabrese', weight: 14, length: 4 },
 ];
+const dividiZucchine = (array) => {
+  const lunghe = array.filter((element, index) => element.length > 15);
+  const corte = array.filter((element, index) => element.length <= 15);
+  return [lunghe, corte];
+};
+const [zucchineLunghe, zucchineNormali] = dividiZucchine(zucchine);
+console.log(zucchineLunghe, zucchineNormali);
+
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
