@@ -4,7 +4,7 @@ const people = [
   { name: 'Marco', age: 67 }
 ];
 
-const names = people.map((person, index) => person.name)
+const names = people.map((person, index) => person.name);
 let listaNomi = '';
 names.forEach((name, index) =>{
     listaNomi += `'${name}', `;
